@@ -15,16 +15,19 @@ const HomePage = () => {
           </p>
           
           <div className="cta-buttons">
-            <Link to="/services">
+            <Link to="/services" className="no-underline">
             <button className="btn book-now">
               <FaCalendarCheck /> Book Now
             </button>
             </Link>
 
             <button className="btn get-portfolio">
+            <Link to="/services" className="no-underline">
               <FaFolderOpen /> Get Portfolio
+              </Link>
             </button>
-            <Link to="/contact">
+          
+            <Link to="/contact" className="no-underline">
             <button className="btn talk-to-advisor">
               <FaComments /> Talk to Advisor
             </button>
