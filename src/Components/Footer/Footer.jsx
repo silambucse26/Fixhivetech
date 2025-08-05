@@ -69,11 +69,27 @@ const Footer = () => {
                     </Link>
                     <h5>Follow Us</h5>
                     <div className="social-icons">
-                        <FaFacebookF className="icon" />
-                        <FaTwitter className="icon" />
-                        <FaInstagram className="icon" />
-                        <FaLinkedinIn className="icon" />
-                        <FaYoutube className="icon" />
+                        <a href="https://www.facebook.com/fixhivetechnologies" target="_blank" rel="noopener noreferrer">
+                            <FaFacebookF className="icon" />
+                        </a>
+
+                        <a href="https://x.com/FixhiveTech" target="_blank" rel="noopener noreferrer">
+                            <FaTwitter className="icon" />
+                        </a>
+
+                        <a href="https://www.instagram.com/fixhivetechnologies/" target="_blank" rel="noopener noreferrer">
+                            <FaInstagram className="icon" />
+                        </a>
+
+                        <a href="https://www.linkedin.com/company/fixhive-technologies/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
+                            <FaLinkedinIn className="icon" />
+                        </a>
+
+                        <a href="mailto:fixhivetechnologies@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <FaEnvelope className="icon" />
+                        </a>
+
+
                     </div>
                 </div>
             </div>
