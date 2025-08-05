@@ -1,0 +1,200 @@
+/* === Root Section === */
+.how-it-works {
+  background: linear-gradient(to bottom right, #dbeafe, #fefce8);
+  padding: 4rem 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hiw-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+/* === Left Side === */
+.hiw-left {
+  flex: 1;
+  min-width: 320px;
+}
+
+.hiw-left h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.hiw-left h2 span {
+  color: #0ea5e9;
+}
+
+.hiw-left p {
+  font-size: 1.1rem;
+  color: #374151;
+  margin-bottom: 2rem;
+}
+
+.features {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  color: #111827;
+  font-size: 1rem;
+}
+
+.features li svg {
+  color: #10b981;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.features li strong {
+  display: block;
+}
+
+.features li span {
+  display: block;
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-left: 1.8rem;
+}
+
+/* Button */
+.learn-more {
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  border: 2px solid #0ea5e9;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: #0ea5e9;
+  color: white;
+}
+
+/* === Right Side Steps === */
+.hiw-right {
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.step-box {
+  display: flex;
+  align-items: flex-start;
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  gap: 1rem;
+}
+
+.step-number {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: white;
+  color: #3b82f6;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  min-width: 50px;
+  text-align: center;
+}
+
+.step-box strong {
+  font-size: 1.1rem;
+  color: #111827;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.step-box p {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+/* === Vision & Mission Section === */
+.vision-mission {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  background-color: #f9fafb;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.vm-block {
+  flex: 1;
+  min-width: 300px;
+  padding: 1.5rem;
+  background: white;
+  border-left: 6px solid #0ea5e9;
+  border-radius: 0.75rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.vm-block::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 1.2rem;
+  width: 24px;
+  height: 24px;
+  background-color: #0ea5e9;
+  mask: url('https://img.icons8.com/ios-filled/50/vision.png') no-repeat center;
+  mask-size: contain;
+}
+
+.vm-block:nth-child(2)::before {
+  mask: url('https://img.icons8.com/ios-filled/50/mission.png') no-repeat center;
+  mask-size: contain;
+}
+
+.vm-block h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  padding-left: 2rem;
+  color: #1f2937;
+}
+
+.vm-block p {
+  font-size: 1rem;
+  color: #4b5563;
+  padding-left: 2rem;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .hiw-container {
+    flex-direction: column;
+  }
+
+  .step-box {
+    flex-direction: row;
+  }
+
+  .step-number {
+    font-size: 1.2rem;
+    min-width: 40px;
+  }
+
+  .vm-block {
+    flex: 100%;
+  }
+}

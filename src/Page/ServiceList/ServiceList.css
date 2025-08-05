@@ -1,0 +1,115 @@
+/* Services.css */
+
+.services-page {
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7f9fc;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  color: #0d47a1;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(33, 150, 243, 0.2);
+}
+
+.icon {
+  font-size: 40px;
+  color: #1565c0;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 22px;
+  color: #0d47a1;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 15px;
+  min-height: 60px;
+}
+
+.learn-more {
+  background: none;
+  color: #1976d2;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.learn-more:hover {
+  color: #0d47a1;
+}
+
+.book-now {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.book-now:hover {
+  background-color: #0d47a1;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size: 32px;
+  }
+
+  .service-card h3 {
+    font-size: 18px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+  }
+}

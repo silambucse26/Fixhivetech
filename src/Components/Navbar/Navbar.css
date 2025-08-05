@@ -1,0 +1,106 @@
+/* General Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
+.fix {
+  font-weight: bold;
+  font-size: 22px;
+  color: #000;
+}
+
+.tech {
+  font-size: 18px;
+  color: #007bff;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #007bff;
+}
+
+/* Get Started Button */
+.get-started {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.get-started:hover {
+  background-color: #0056b3;
+}
+
+/* Hamburger Menu */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    color: #333;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-200%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    transform: translateY(0%);
+  }
+}
