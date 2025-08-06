@@ -23,7 +23,7 @@ const HomePage = () => {
 
             <button className="btn get-portfolio">
             <Link to="/services" className="no-underline">
-              <FaFolderOpen /> Get Portfolio
+              <FaFolderOpen /> About Us
               </Link>
             </button>
           

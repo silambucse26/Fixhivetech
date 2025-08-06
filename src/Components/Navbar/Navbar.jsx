@@ -20,8 +20,8 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="logo">
         <img src="FixhiveTech.png" alt="" />
-        <span className="fix">Fixhive</span>
-        <span className="tech">Technologies</span>
+        <span className="fix">Fixhivetech</span>
+        <span className="tech"></span>
       </div>
 
       <div className="menu-icon" onClick={toggleMenu}>

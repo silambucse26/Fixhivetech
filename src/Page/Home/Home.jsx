@@ -7,6 +7,7 @@ import ServicesSection from '../../Components/Categories/Categories'
 import WhyFixhive from '../../Components/Why/Why'
 import HowItWorks from '../../Components/How/How'
 import Footer from '../../Components/Footer/Footer'
+import FixhiveHomeSections from '../../Components/Social/Social'
 
 const Home = () => {
   return (
@@ -16,7 +17,9 @@ const Home = () => {
         <WhyFixhive />
         <ServicesSection />
         <HowItWorks />
+        <FixhiveHomeSections />
         <Footer />
+        
     </div>
   )
 }

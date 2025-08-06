@@ -23,7 +23,7 @@ const Footer = () => {
                 <div className="footer-col">
                     <h2 className="logo">
                         <span className="fix">Fixhive</span>
-                        <span className="tech">Technologies</span>
+                        <span className="tech"></span>
                     </h2>
                     <p>Your trusted partner for professional services. From digital solutions to home services, we're here to make your life easier.</p>
                     <ul className="contact-info">

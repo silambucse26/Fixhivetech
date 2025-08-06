@@ -4,6 +4,8 @@ import { FaHeart, FaStar, FaGlobe, FaUserGraduate, FaFileAlt, FaCar, FaLightbulb
 import Footer from '../../Components/Footer/Footer';
 import Navbar from '../../Components/Navbar/Navbar';
 import { Link } from 'react-router-dom';
+import TechnicalServicesSection from '../../Components/Technical/Technical';
+
 
 const Home = () => {
     return (
@@ -11,7 +13,7 @@ const Home = () => {
             <Navbar />
         <div className="home">
             <header className="hero">
-                <p className="welcome">Welcome to Fixhive Technologies!</p>
+                <p className="welcome">Welcome to Fixhive!</p>
                 <h1><span className="highlight">Where Creativity Meets</span> Technology</h1>
                 <p className="desc">We're a passionate team of final-year engineering students empowering people like you with smart, beautiful, and affordable tech solutions.</p>
                 <div className="hero-buttons">
@@ -63,6 +65,9 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <div>
+                <TechnicalServicesSection />
+            </div>
 
             <section className="non-tech">
                 <h5>Non-Technical Services</h5>
@@ -102,7 +107,7 @@ const Home = () => {
 
             <section className="who">
                 <h5>Who Are We?</h5>
-                <h2>We're <span className="highlight">Fixhive</span> Technologies</h2>
+                <h2>We're <span className="highlight">Fixhive</span></h2>
                 <p className="desc">A young, passionate team of final-year engineering students with one goal: To empower people like you with smart, beautiful, and affordable tech solutions.</p>
                 <div className="values">
                     <div className="card">
