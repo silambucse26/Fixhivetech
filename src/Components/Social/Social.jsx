@@ -6,23 +6,6 @@ const FixhiveHomeSections = () => {
     <div className="fixhive-home">
 
       {/* Social Media Activities */}
-      <section className="social-media">
-        <h2>Fixhive on Social Media</h2>
-        <div className="social-links">
-          <a href="https://www.linkedin.com/company/fixhive-technologies/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="social-card">
-            <img src="FixhiveTech.png" alt="LinkedIn Post" />
-            <p>Check our latest LinkedIn update</p>
-          </a>
-          <a href="https://www.instagram.com/fixhivetechnologies/" target="_blank" rel="noopener noreferrer" className="social-card">
-            <img src="FixhiveTech.png" alt="Instagram Post" />
-            <p>Follow us on Instagram</p>
-          </a>
-          <a href="https://x.com/FixhiveTech" target="_blank" rel="noopener noreferrer" className="social-card">
-            <img src="FixhiveTech.png" alt="X (Twitter) Post" />
-            <p>Our latest tweet on X</p>
-          </a>
-        </div>
-      </section>
 
       {/* Contact & Booking */}
       <section className="about-contact">

@@ -5,11 +5,13 @@ import ServiceBooking from "./Page/ServiceList/ServiceList";
 import About from "./Page/About/About";
 import Services from "./Page/ServiceList/ServiceList";
 import Contact from "./Page/Contact/Contact";
+import ScrollToTop from "./Components/Scroll";
 
 const App = () => {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Routes >
               <Route path="/" element={<Home />} />
               <Route path="/Services" element={<Services />} />
